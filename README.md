@@ -1,6 +1,6 @@
 # terrain-contour
 
-Drawing contour lines on a triangular mesh (a terrain)
+Drawing contour lines on a triangular mesh (a terrain).
 
 ## Method
 
