@@ -17,7 +17,7 @@ The code here is heavly borrowed from the [clipped-edge example](https://gkjohns
 
 ## Performance
 
-On the provided example mesh, consisting of 130k triangles, the preprossesing step takes 83 ms, and generating a single contour line takes approx 0.45 ms. In this case, generating contour lines with 10 meter spacing (181 contour lines in total) takes 75 ms. All times are measured on an 2020 MacBook Air (M1).
+On the provided example mesh, consisting of 130k triangles, the preprossesing step takes 83 ms, and generating a single contour line takes approx 0.45 ms. In this particular case, generating contour lines with 10 meter spacing (181 contour lines in total) takes 75 ms. All times are measured on an 2020 MacBook Air (M1) using Chrome.
 
 ## Limitations
 
