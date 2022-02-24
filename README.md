@@ -22,7 +22,7 @@ On the provided example mesh, consisting of 130k triangles, the preprossesing st
 ## Limitations
 
 - The contour lines consist of linear segments, and not curves (splines). Linear segments might not be visually ideal, but as the source geometry here consists of planar patches, using any kind of interpolation to produce rounder contour lines will create artifacts (unnatural gaps between the terrain surface and the contours).
-- Contour lines might contain gaps. Where the intersection plane only hits one vertex (or one edge) of a mesh triangle, the method chosen here will not create a line segment for that section of the contour. Also, whenever the contour plane coincides with a mesh triangle (both are parallel to the xy-plane, and have the same elevation), the line segment for that triangle is not well-defined, and the resulting contour line will contain a gap.
+- Contour lines might contain gaps. Where the intersection plane only hits one vertex (or one edge) of a mesh triangle, the method chosen here will not create a line segment for that section of the contour. Also, whenever the contour plane coincides with a mesh triangle (ie both are parallel to the xy-plane, and have the same elevation), the line segment for that triangle is not well-defined, and the resulting contour line will contain a gap there.
 
 ## Possible improvements
 
