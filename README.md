@@ -2,6 +2,8 @@
 
 A tool to calculate and draw contour lines on a triangular mesh (a terrain).
 
+![Screenshot](https://github.com/kristoffer-dyrkorn/terrain-contour/blob/main/images/terrain.jpg)
+
 ## Method
 
 The contour lines are made this way:
