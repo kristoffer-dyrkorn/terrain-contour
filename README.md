@@ -9,9 +9,9 @@ The contour lines are made like this:
 - The terrain (a triangular mesh) is loaded
 - In a preprosessing step, a bounding hierarchical volume (BVH) is generated, using [three-mesh-bvh](https://github.com/gkjohnson/three-mesh-bvh). This is to enable fast intersection queries between the terrain and a plane parallel to the xy-plane.
 - Using a bouding box for the terrain, find the min and max elevations.
-- For each contour line to be drawn (given certain spacing rules), calculate the intersections between the terrain mesh (the triangles in it) and a plane parallel to the xy-plane, at the desired elevation.
-- The intersections that are found between the plane and the triangles form line segments - that in turn constitute a contour line.
-- Draw the line segments on screen, nudging them a bit upwards to avoid z-fighting and/or intersecting the terrain surface itself.
+- For each contour line to be drawn (given a spacing rule, ie "every 10 meters"), calculate the intersections between the terrain mesh (the triangles in it) and a plane parallel to the xy-plane, at the contour line elevation.
+- The intersections that are found between the plane and the triangles are collected into line segments - that in turn constitute a contour line.
+- Draw the line segments on screen, nudging them to a slightly higher elevation to avoid z-fighting and/or intersecting the terrain surface itself.
 
 The code here is heavly borrowed from the [clipped-edge example](https://gkjohnson.github.io/three-mesh-bvh/example/bundle/clippedEdges.html) in three-mesh-bvh.
 
